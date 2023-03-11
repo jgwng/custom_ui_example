@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DraggableScrollbar extends StatefulWidget {
+class HorizontalDraggableScrollBar extends StatefulWidget {
   final Widget child;
   final ScrollController controller;
   final Color? bgColor;
@@ -9,7 +9,7 @@ class DraggableScrollbar extends StatefulWidget {
   final double? scrollBarWidth;
   final double? barRadius;
 
-  const DraggableScrollbar(
+  const HorizontalDraggableScrollBar(
       {required this.child,
       required this.controller,
       this.barRadius,
@@ -19,10 +19,10 @@ class DraggableScrollbar extends StatefulWidget {
       this.barColor});
 
   @override
-  _DraggableScrollbarState createState() => _DraggableScrollbarState();
+  _HorizontalDraggableScrollBarState createState() => _HorizontalDraggableScrollBarState();
 }
 
-class _DraggableScrollbarState extends State<DraggableScrollbar> {
+class _HorizontalDraggableScrollBarState extends State<HorizontalDraggableScrollBar> {
   late double _barOffset;
   late double _viewOffset;
   late bool _isDragInProcess;

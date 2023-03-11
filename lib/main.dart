@@ -15,20 +15,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Custom UI Collection'),
+      home: const CustomUICollectionPage(title: 'Custom UI Collection'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class CustomUICollectionPage extends StatefulWidget {
+  const CustomUICollectionPage({super.key, required this.title});
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<CustomUICollectionPage> createState() => _CustomUICollectionPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _CustomUICollectionPageState extends State<CustomUICollectionPage> {
 
   @override
   Widget build(BuildContext context) {
