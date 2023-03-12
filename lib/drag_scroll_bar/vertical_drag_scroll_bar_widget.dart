@@ -10,7 +10,7 @@ class VerticalDraggableScrollbar extends StatefulWidget {
   final double? barRadius;
 
   const VerticalDraggableScrollbar(
-      {required this.child,
+      {super.key, required this.child,
       required this.controller,
       this.barRadius,
       this.bgBarWidth,

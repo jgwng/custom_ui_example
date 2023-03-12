@@ -3,6 +3,7 @@ import 'package:custom_ui_example/drag_scroll_bar/vertical_drag_scroll_bar_widge
 import 'package:flutter/material.dart';
 
 class DragScrollBarExamplePage extends StatefulWidget {
+  const DragScrollBarExamplePage({super.key});
 
   @override
   State<DragScrollBarExamplePage> createState() => _DragScrollBarExamplePageState();

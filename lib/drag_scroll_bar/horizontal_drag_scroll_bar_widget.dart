@@ -10,7 +10,7 @@ class HorizontalDraggableScrollBar extends StatefulWidget {
   final double? barRadius;
 
   const HorizontalDraggableScrollBar(
-      {required this.child,
+      {super.key, required this.child,
       required this.controller,
       this.barRadius,
       this.bgBarWidth,

@@ -51,7 +51,15 @@ class _CustomUICollectionPageState extends State<CustomUICollectionPage> {
         return Pages.values[index].examplePage;
       })),
       child: Container(
-        height: 40,
+        height: 60,
+        decoration: const BoxDecoration(
+          border: Border(
+            bottom: BorderSide( // POINT
+              color: Colors.black,
+              width: 2.0,
+            ),
+          )
+        ),
         alignment: Alignment.center,
         child: Text(Pages.values[index].title,style: const TextStyle(
           color: Colors.black,
